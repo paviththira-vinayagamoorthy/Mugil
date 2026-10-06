@@ -15,6 +15,7 @@ from app.models.customer import Customer
 from app.models.order_item import OrderItem
 from app.models.order import Order
 from app.models.user import User
+
 # =========================================================
 # IMPORT ROUTERS
 # =========================================================
@@ -54,7 +55,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "http://127.0.0.1:5173"
+        "http://127.0.0.1:5173",
+        "https://mugil-livid.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
